@@ -6,6 +6,7 @@
 //
 
 #import "HomeViewController.h"
+#import "PZObjcSwiftUIHome-Swift.h"
 
 @interface HomeViewController ()
 
@@ -17,6 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.orangeColor;
+    UIView *subView = PZWrapper.wrapperController.view;
+    subView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    [self.view addSubview:subView];
+
 }
 
 /*
