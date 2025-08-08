@@ -1,0 +1,22 @@
+{
+  "name": "PZObjcSwiftUIHome",
+  "version": "0.1.0",
+  "summary": "A short description of PZObjcSwiftUIHome.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhoupengzu@kanzhun.com/PZObjcSwiftUIHome",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhoupengzu@kanzhun.com": "zhoupengzu@kanzhun.com"
+  },
+  "source": {
+    "git": "https://github.com/zhoupengzu@kanzhun.com/PZObjcSwiftUIHome.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "PZObjcSwiftUIHome/Classes/**/*"
+}
