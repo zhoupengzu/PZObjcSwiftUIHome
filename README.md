@@ -22,7 +22,7 @@ pod 'PZObjcSwiftUIHome'
 
 ## Author
 
-zhoupengzu@kanzhun.com, zhoupengzu@kanzhun.com
+zhoupengzu@163.com, zhoupengzu@163.com
 
 ## License
 
