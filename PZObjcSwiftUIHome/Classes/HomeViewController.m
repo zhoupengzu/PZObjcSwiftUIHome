@@ -17,11 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = UIColor.orangeColor;
-    UIView *subView = PZWrapper.wrapperController.view;
-    subView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-    [self.view addSubview:subView];
+    self.view.backgroundColor = UIColor.whiteColor;
+    UIButton *swiftRootBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [swiftRootBtn setTitle:@"SwiftRootVC" forState:UIControlStateNormal];
+    swiftRootBtn.frame = CGRectMake(20, 100, [UIScreen mainScreen].bounds.size.width - 2 * 20, 50);
+    [swiftRootBtn addTarget:self action:@selector(clickedToShowSwiftRootVC) forControlEvents:UIControlEventTouchUpInside];
+    [swiftRootBtn setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
+    swiftRootBtn.layer.cornerRadius = 8;
+    swiftRootBtn.layer.borderWidth = 1;
+    swiftRootBtn.layer.borderColor = UIColor.grayColor.CGColor;
+    swiftRootBtn.layer.masksToBounds = YES;
+    [self.view addSubview:swiftRootBtn];
+}
 
+- (void)clickedToShowSwiftRootVC {
+    UIViewController *createVC = [PZHomeSwiftRootController createSwiftRootVCWithCallback:^{
+        NSLog(@"hhhhhh");
+    }];
+    [self.navigationController pushViewController:createVC animated:YES];
 }
 
 /*
